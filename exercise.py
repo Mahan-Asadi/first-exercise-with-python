@@ -3,7 +3,7 @@ def divide_by_zero_safe():
         result = 10 / 0
         return result
     except ZeroDivisionError:
-        print("Error: Division by zero occurred!")
+        return None
 
 result = divide_by_zero_safe()
 if result is not None:
